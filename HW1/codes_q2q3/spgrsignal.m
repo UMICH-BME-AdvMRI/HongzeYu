@@ -32,7 +32,7 @@ for n=1:Nex
 	M=Atr*M+Btr*on;
     
     % Gradient spoiling
-	for k=1:Nf
+    for k=1:Nf
 		M(:,k) = zrot(phi(k))*M(:,k);
     end
 
